@@ -1,0 +1,37 @@
+@import "./variables";
+header {
+    display: flex;
+    border-bottom: 1px solid $shadow-color;
+    width: 425px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 56px;
+    width: 134px;
+    margin-left: 130px;
+}
+
+.form {
+    display: flex;
+    justify-content: space-around;
+    background-color: $backround-searc-color;
+    border: 1px solis blue;
+    width: 425px;
+}
+
+.input {
+    border: none;
+    background-color: $backround-searc-color;
+}
+
+.reservation {
+    background-color: $shadow-color;
+}
+
+.tête {
+    display: flex;
+    flex-direction: column;
+}

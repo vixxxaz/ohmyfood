@@ -1,0 +1,39 @@
+@charset "UTF-8";
+header {
+  display: flex;
+  border-bottom: 1px solid grey;
+  width: 425px;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 56px;
+  width: 134px;
+  margin-left: 130px;
+}
+
+.form {
+  display: flex;
+  justify-content: space-around;
+  background-color: lightgrey;
+  border: 1px solis blue;
+  width: 425px;
+}
+
+.input {
+  border: none;
+  background-color: lightgrey;
+}
+
+.reservation {
+  background-color: grey;
+}
+
+.tête {
+  display: flex;
+  flex-direction: column;
+}
+
+/*# sourceMappingURL=style.css.map */

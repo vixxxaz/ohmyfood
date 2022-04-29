@@ -5,31 +5,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sass\scss\main.css">
     <script src="https://kit.fontawesome.com/73b021ff64.js" crossorigin="anonymous"></script>
     <title>Ohmyfood</title>
 </head>
 
 <body>
-    <header>
-        <div class="logo"><img src="logo/ohmyfood.png" alt="logo" /></div>
-        <div>
-            <form action="search" method="traitement.php">
+    <div class="tête">
+        <header class="header">
+            <div class="logo"><img src="logo/ohmyfood.png" alt="logo" /></div>
+        </header>
+
+        <div class="form">
+            <form class="localisation" action="search" method="traitement.php">
                 <span>
                     <i class="fa-solid fa-location-dot"></i>
-                    <input type="search" placeholder="Paris, Belleville">
+                    <input class="input" type="search" placeholder="Paris, Belleville">
                 </span>
             </form>
         </div>
 
-    </header>
-    <article>
-        <h1>Réservez le menu qui vous convient</h1>
-        <p>Découvrez des restaurants d'exception, selectionnés par nos soins.
-        </p>
-        <button>Explorer nos restaurants</button>
 
-    </article>
+
+        <article class="reservation">
+            <h1>Réservez le menu qui vous convient</h1>
+            <p>Découvrez des restaurants d'exception, selectionnés par nos soins.
+            </p>
+            <button>Explorer nos restaurants</button>
+
+        </article>
+    </div>
     <nav>
         <h2>Fonctionnement</h2>
         <ol>

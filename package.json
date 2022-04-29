@@ -1,0 +1,19 @@
+{
+    "name": "ohmyfood_p3",
+    "version": "1.0.0",
+    "description": "site de restaurant",
+    "main": "index.js",
+    "scripts": {
+        "sass": "sass --watch ./sass/scss/main.scss:.sass/scss/style.css"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/vixxxaz/ohmyfood_p3.git"
+    },
+    "author": "gardet vincent",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/vixxxaz/ohmyfood_p3/issues"
+    },
+    "homepage": "https://github.com/vixxxaz/ohmyfood_p3#readme"
+}
