@@ -1,37 +1,85 @@
 @import "./variables";
-header {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Shrikhand&display=swap');
+body {
+    box-sizing: border-box;
+    font-family: 'Roboto', 'sans-serif';
+    margin: 0px;
+}
+
+.head {
     display: flex;
-    border-bottom: 1px solid $shadow-color;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
     width: 425px;
 }
 
 .logo {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 56px;
-    width: 134px;
-    margin-left: 130px;
+    align-items: center;
+    justify-content: center;
+    height: 77px;
+    width: 425px;
+}
+
+.logo-size {
+    height: 31px;
+    width: 173px;
 }
 
 .form {
     display: flex;
-    justify-content: space-around;
-    background-color: $backround-searc-color;
-    border: 1px solis blue;
+    justify-content: center;
+    background-color: rgb(242, 242, 242);
+    box-shadow: 0 0 5px rgb(0 0 0 / 25%);
     width: 425px;
+    height: 44px;
+}
+
+.localisation {
+    display: flex;
+    align-items: center;
+}
+
+.ico-loc {
+    margin-right: 10px;
 }
 
 .input {
     border: none;
-    background-color: $backround-searc-color;
+    background-color: rgb(242, 242, 242);
+    font-weight: 300;
 }
 
 .reservation {
-    background-color: $shadow-color;
-}
-
-.tête {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 425px;
+    height: 268px;
+    background-color: rgb(248, 248, 248);
+}
+
+.reservation h1 {
+    margin-bottom: 5px;
+    width: 250px;
+}
+
+.reservation p {
+    width: 282px;
+    margin-bottom: 33px;
+}
+
+.btn {
+    background-color: $color-primary;
+    border-radius: 27px;
+    border: transparent;
+    color: white;
+    font-weight: bold;
+    height: 47px;
+    width: 197px;
 }
