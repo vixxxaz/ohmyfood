@@ -13,11 +13,11 @@
 <body>
     <div class="head">
         <header class="header">
-            <div class="logo"><img class="logo-size" src="logo/ohmyfood.png" alt="logo" /></div>
+            <div class="logo-bloc"><img class="logo-size" src="logo/ohmyfood.png" alt="logo" /></div>
         </header>
 
         <div class="form">
-            <form class="localisation" action="search" method="traitement.php">
+            <form class="localisation form-color" action="search" method="traitement.php">
                 <span>
                     <i class="ico-loc fa-solid fa-location-dot"></i>
                     <input class="input" type="search" value="Paris, Belleville">
@@ -28,20 +28,22 @@
 
 
         <article class="reservation">
-            <h1>Réservez le menu qui vous convient</h1>
-            <p>Découvrez des restaurants d'exception, selectionnés par nos soins.
+            <h1 class="res-title">Réservez le menu qui vous convient</h1>
+            <p class="p-style">Découvrez des restaurants d'exception, selectionnés par nos soins.
             </p>
-            <button class="btn" type="button">Explorer nos restaurants</button>
+            <a href="#"><button class="btn" type="button">Explorer nos restaurants</button></a>
 
         </article>
     </div>
-    <nav>
-        <h2>Fonctionnement</h2>
-        <ol>
-            <li>Choisissez un restaurant</li>
-            <li>Composez votre menu</li>
-            <li>Degustez au restaurant</li>
-        </ol>
+    <nav class="navigation">
+        <h2 class="nav-title">Fonctionnement</h2>
+        <div class="list-box">
+            <ol>
+                <li><button class="nav-btn"><i class="fas fa-mobile-alt"></i>Choisissez un restaurant</button></li>
+                <li><button class="nav-btn"><i class="fas fa-list-ul"></i>Composez votre menu</button></li>
+                <li><button class="nav-btn"> <i class="fas fa-store"></i> Degustez au restaurant</button></li>
+            </ol>
+        </div>
     </nav>
 
 </body>

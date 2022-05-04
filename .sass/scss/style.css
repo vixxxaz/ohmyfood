@@ -1,3 +1,4 @@
+/*# sourceMappingURL=main.css.map */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Shrikhand&display=swap");
 body {
   box-sizing: border-box;
@@ -13,18 +14,19 @@ body {
 .header {
   display: flex;
   justify-content: center;
-  width: 425px;
+  align-items: center;
+  width: 100%;
+  height: 66px;
 }
 
-.logo {
+.logo-bloc {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 77px;
-  width: 425px;
+  width: 100%;
+  margin-top: 10px;
 }
-
-.logo-size {
+.logo-bloc .logo-size {
   height: 31px;
   width: 173px;
 }
@@ -32,9 +34,9 @@ body {
 .form {
   display: flex;
   justify-content: center;
-  background-color: rgb(242, 242, 242);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
-  width: 425px;
+  background-color: rgb(241, 241, 241);
+  box-shadow: inset 2px 6px 7px -6px rgba(0, 0, 0, 0.25);
+  width: 100%;
   height: 44px;
 }
 
@@ -49,7 +51,7 @@ body {
 
 .input {
   border: none;
-  background-color: rgb(242, 242, 242);
+  background-color: rgb(241, 241, 241);
   font-weight: 300;
 }
 
@@ -58,29 +60,63 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  width: 425px;
+  width: 100%;
   height: 268px;
-  background-color: rgb(248, 248, 248);
+  background: #f7f7f7;
 }
-
-.reservation h1 {
-  margin-bottom: 5px;
-  width: 250px;
+.reservation .res-title {
+  font-size: 1.2rem;
+  margin-top: 40px;
+  font-weight: bold;
+  margin-bottom: -5px;
+  width: 232px;
 }
-
-.reservation p {
+.reservation .p-style {
+  color: #585858;
+  font-weight: 300;
   width: 282px;
   margin-bottom: 33px;
 }
 
 .btn {
-  background-color: #9356DC;
+  background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
   border-radius: 27px;
   border: transparent;
   color: white;
-  font-weight: bold;
+  font-weight: 500;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
   height: 47px;
   width: 197px;
+}
+
+.btn:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.navigation .nav-title {
+  margin-left: 20px;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.navigation .list-box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 240px;
+}
+.navigation .nav-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  height: 70px;
+  width: 300px;
+  border-radius: 20px;
+  box-shadow: 1px 0 10px rgba(0, 0, 0, 0.25);
+  background-color: #f7f7f7;
+  border: none;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map */
