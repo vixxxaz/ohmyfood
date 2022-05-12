@@ -1,6 +1,6 @@
-@import "./variables";
-@import "./mixins";
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Shrikhand&display=swap');
+@import "./utils/_variables.scss";
+@import "./utils/mixins";
+@import "./base/typography";
 body {
     box-sizing: border-box;
     font-family: 'Roboto', 'sans-serif';
@@ -18,11 +18,11 @@ body {
     height: 66px;
 }
 
-.logo-bloc {
+.logo_bloc {
     @include flexbox-center;
     width: 100%;
     margin-top: 10px;
-    .logo-size {
+    .logo_size {
         height: 31px;
         width: 173px;
     }
@@ -31,7 +31,7 @@ body {
 .form {
     display: flex;
     justify-content: center;
-    background-color: $backround-search-color;
+    background-color: $background-search-color;
     box-shadow: inset 2px 6px 7px -6px $shadow-color;
     width: 100%;
     height: 44px;
@@ -40,15 +40,16 @@ body {
 .localisation {
     display: flex;
     align-items: center;
+    margin-left: 19px;
 }
 
-.ico-loc {
-    margin-right: 10px;
+.ico_loc {
+    margin-right: 6px;
 }
 
 .input {
     border: none;
-    background-color: $backround-search-color;
+    background-color: $background-search-color;
     font-weight: 300;
 }
 
@@ -59,21 +60,21 @@ body {
     text-align: center;
     width: 100%;
     height: 268px;
-    background: (lighten($backround-search-color, 2.5%));
-    .res-title {
+    background: (lighten($background-search-color, 2.5%));
+    .res_title {
         font-size: 1.2rem;
         margin-top: 40px;
         font-weight: bold;
         margin-bottom: -5px;
         width: 232px;
     }
-    .p-style {
-        color: (darken($backround-search-color, 60%));
+    .p_style {
+        color: (darken($background-search-color, 60%));
         font-weight: 300;
         width: 282px;
         margin-bottom: 33px;
     }
-    .btn-explorer {
+    .btn_explorer {
         background-image: linear-gradient(to bottom, $color-secondary, $color-primary);
         border-radius: 27px;
         border: transparent;
@@ -90,12 +91,12 @@ body {
 }
 
 .navigation {
-    .nav-title {
+    .nav_title {
         margin-left: 20px;
         font-size: 1.3rem;
         font-weight: bold;
     }
-    .list-box {
+    .list_box {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -124,7 +125,7 @@ body {
             animation: rotation 6s infinite linear;
         }
     }
-    .nav-btn {
+    .nav_btn {
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -133,7 +134,7 @@ body {
         width: 220px;
         border-radius: 20px;
         box-shadow: 1px 0 6px $shadow-color;
-        background-color: (lighten($backround-search-color, 2.5%));
+        background-color: (lighten($background-search-color, 2.5%));
         border: none;
         font-weight: bold;
         transition: all 400ms;
@@ -148,8 +149,10 @@ body {
     }
 }
 
-.restaurant-list {
+.restaurant_list {
     @include flex-column;
+    height: 1300px;
+    background-color: $background-search-color;
     gap: 20px;
     a {
         @include link;
@@ -158,9 +161,10 @@ body {
         width: -moz-fit-content;
         width: fit-content;
         @include shadow-card;
-        .img-resto1 {
+        background-color: #fff;
+        .img_resto1 {
             object-fit: cover;
-            width: 350px;
+            width: 395px;
             height: 200px;
             border-radius: 5px;
         }
@@ -170,15 +174,33 @@ body {
         margin-left: 248px;
         margin-top: 16px;
         background-color: $color-tertiary;
-        border-radius: 5px;
-        padding: 9px 10px;
+        border-radius: 3px;
+        padding: 5px 12px;
+        color: (darken($color-tertiary, 35%));
+        font-weight: 500;
     }
-    .restaurant-text {
+    .restaurant_text {
         padding: 5px;
+        font-size: 0.6rem;
+    }
+    p {
+        font-size: 0.8rem;
+        margin-top: -15px;
+        font-weight: 300;
+    }
+    svg {
+        width: 25px;
+        height: 25px;
+    }
+    .svgcoeur {
+        fill: var($color-primary)
     }
     .coeur {
         height: 25px;
         width: 25px;
+        &:hover {
+            filter: hue-rotate(360deg);
+        }
     }
     h2 {
         display: flex;
@@ -189,15 +211,21 @@ body {
 .foot {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    margin-top: 20px;
+    justify-content: center;
+    gap: 6px;
     padding: 20px;
     color: #fff;
-    background-color: (darken($backround-search-color, 72%));
-    & a {
+    background-color: (darken($background-search-color, 72%));
+    a {
+        display: flex;
+        column-gap: 15px;
         @include link;
     }
-    & h3 {
+    .handsize {
+        font-size: 11.5px;
+    }
+    .foot_title {
+        margin-top: -2px;
         font-family: 'Shrikhand';
     }
 }
