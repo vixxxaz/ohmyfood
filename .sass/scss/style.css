@@ -3,7 +3,7 @@
 body {
   box-sizing: border-box;
   font-family: "Roboto", "sans-serif";
-  margin: 2px 20px;
+  margin: 0px 0px;
 }
 
 .head {
@@ -107,6 +107,14 @@ body {
 .navigation .pos {
   position: relative;
 }
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
 .navigation .num {
   height: 30px;
   width: 30px;
@@ -116,6 +124,7 @@ body {
 }
 .navigation .num:hover {
   transform: scale(1.05);
+  animation: rotation 6s infinite linear;
 }
 .navigation .nav-btn {
   display: flex;
@@ -138,6 +147,65 @@ body {
 }
 .navigation .nav-btn:hover .ico-nav {
   color: #9356DC;
+}
+
+.restaurant-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.restaurant-list a {
+  text-decoration: none;
+  color: inherit;
+}
+.restaurant-list .restaurant {
+  width: -moz-fit-content;
+  width: fit-content;
+  box-shadow: 1px 0 6px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+}
+.restaurant-list .restaurant .img-resto1 {
+  object-fit: cover;
+  width: 350px;
+  height: 200px;
+  border-radius: 5px;
+}
+.restaurant-list .new {
+  position: absolute;
+  margin-left: 248px;
+  margin-top: 16px;
+  background-color: #99E2D0;
+  border-radius: 5px;
+  padding: 9px 10px;
+}
+.restaurant-list .restaurant-text {
+  padding: 5px;
+}
+.restaurant-list .coeur {
+  height: 25px;
+  width: 25px;
+}
+.restaurant-list h2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.foot {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 20px;
+  padding: 20px;
+  color: #fff;
+  background-color: #393939;
+}
+.foot a {
+  text-decoration: none;
+  color: inherit;
+}
+.foot h3 {
+  font-family: "Shrikhand";
 }
 
 /*# sourceMappingURL=style.css.map */
