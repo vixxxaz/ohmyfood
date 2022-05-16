@@ -1,27 +1,29 @@
-@import "./utils/_variables.scss";
-@import "./utils/mixins";
-@import "./utils/animations";
-///
-@import "./base/typography";
-@import "./base/base";
-///
-@import "./composants/button";
-///
-@import "./layout/footer";
-@import "./layout/header";
-@import "./layout/navigation";
-@import "./layout/forms";
-@import "./layout/loader";
-///
-@import "./pages/home";
-///
-.logo_bloc {
-    @include flexbox-center;
-    width: 100%;
-    margin-top: 10px;
-    .logo_size {
-        height: 31px;
-        width: 173px;
+.navigation {
+    .nav_title {
+        margin-left: 20px;
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+    .list_box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 240px;
+    }
+    .pos {
+        position: relative;
+    }
+    .num {
+        height: 30px;
+        width: 30px;
+        position: absolute;
+        margin-left: -29px;
+        margin-top: -16px;
+        &:hover {
+            transform: scale(1.05);
+            animation: rotation 6s infinite linear;
+        }
     }
 }
 

@@ -1,0 +1,21 @@
+.foot {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+    padding: 20px;
+    color: #fff;
+    background-color: (darken($background-search-color, 72%));
+    a {
+        display: flex;
+        column-gap: 15px;
+        @include link;
+    }
+    .handsize {
+        font-size: 11.5px;
+    }
+    .foot_title {
+        margin-top: -2px;
+        font-family: 'Shrikhand';
+    }
+}

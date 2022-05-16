@@ -26,12 +26,65 @@ body {
   margin: 0px 0px;
 }
 
-.chargement {
-  width: 240px;
-  height: 40px;
-  border-radius: 40px;
-  background: linear-gradient(#9655DC 0 0) left/0% 100% no-repeat #ff79da;
-  animation: charge 4s infinite steps(10);
+.btn_explorer {
+  background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
+  border-radius: 27px;
+  border: transparent;
+  color: white;
+  font-weight: 500;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+  height: 47px;
+  width: 197px;
+}
+.btn_explorer:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.nav_btn {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 15px;
+  height: 55px;
+  width: 220px;
+  border-radius: 20px;
+  box-shadow: 1px 0 6px rgba(0, 0, 0, 0.25);
+  background-color: #f7f7f7;
+  border: none;
+  font-weight: bold;
+  transition: all 400ms;
+}
+.nav_btn:hover {
+  transform: scale(1.05);
+  background-color: #e4d5f6;
+  cursor: pointer;
+}
+.nav_btn:hover .ico-nav {
+  color: #9356DC;
+}
+
+.foot {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+  padding: 20px;
+  color: #fff;
+  background-color: #393939;
+}
+.foot a {
+  display: flex;
+  column-gap: 15px;
+  text-decoration: none;
+  color: inherit;
+}
+.foot .handsize {
+  font-size: 11.5px;
+}
+.foot .foot_title {
+  margin-top: -2px;
+  font-family: "Shrikhand";
 }
 
 .head {
@@ -47,25 +100,31 @@ body {
   height: 66px;
 }
 
-.logo_bloc {
+.navigation .nav_title {
+  margin-left: 20px;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.navigation .list_box {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  width: 100%;
-  margin-top: 10px;
+  height: 240px;
 }
-.logo_bloc .logo_size {
-  height: 31px;
-  width: 173px;
+.navigation .pos {
+  position: relative;
 }
-
-.form {
-  display: flex;
-  justify-content: center;
-  background-color: rgb(241, 241, 241);
-  box-shadow: inset 2px 6px 7px -6px rgba(0, 0, 0, 0.25);
-  width: 100%;
-  height: 44px;
+.navigation .num {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  margin-left: -29px;
+  margin-top: -16px;
+}
+.navigation .num:hover {
+  transform: scale(1.05);
+  animation: rotation 6s infinite linear;
 }
 
 .localisation {
@@ -105,69 +164,6 @@ body {
   font-weight: 300;
   width: 282px;
   margin-bottom: 33px;
-}
-.reservation .btn_explorer {
-  background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
-  border-radius: 27px;
-  border: transparent;
-  color: white;
-  font-weight: 500;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
-  height: 47px;
-  width: 197px;
-}
-.reservation .btn_explorer:hover {
-  opacity: 0.9;
-  cursor: pointer;
-}
-
-.navigation .nav_title {
-  margin-left: 20px;
-  font-size: 1.3rem;
-  font-weight: bold;
-}
-.navigation .list_box {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  height: 240px;
-}
-.navigation .pos {
-  position: relative;
-}
-.navigation .num {
-  height: 30px;
-  width: 30px;
-  position: absolute;
-  margin-left: -29px;
-  margin-top: -16px;
-}
-.navigation .num:hover {
-  transform: scale(1.05);
-  animation: rotation 6s infinite linear;
-}
-.navigation .nav_btn {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 15px;
-  height: 55px;
-  width: 220px;
-  border-radius: 20px;
-  box-shadow: 1px 0 6px rgba(0, 0, 0, 0.25);
-  background-color: #f7f7f7;
-  border: none;
-  font-weight: bold;
-  transition: all 400ms;
-}
-.navigation .nav_btn:hover {
-  transform: scale(1.05);
-  background-color: #e4d5f6;
-  cursor: pointer;
-}
-.navigation .nav_btn:hover .ico-nav {
-  color: #9356DC;
 }
 
 .restaurant_list {
@@ -231,27 +227,145 @@ body {
   font-weight: bold;
 }
 
-.foot {
+.form {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(241, 241, 241);
+  box-shadow: inset 2px 6px 7px -6px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  height: 44px;
+}
+
+.chargement {
+  width: 240px;
+  height: 40px;
+  border-radius: 40px;
+  background: linear-gradient(#9655DC 0 0) left/0% 100% no-repeat #ff79da;
+  animation: charge 4s infinite steps(10);
+}
+
+.logo_bloc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+}
+.logo_bloc .logo_size {
+  height: 31px;
+  width: 173px;
+}
+
+.logo_bloc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+}
+.logo_bloc .logo_size {
+  height: 31px;
+  width: 173px;
+}
+
+.localisation {
+  display: flex;
+  align-items: center;
+  margin-left: 19px;
+}
+
+.ico_loc {
+  margin-right: 6px;
+}
+
+.input {
+  border: none;
+  background-color: rgb(241, 241, 241);
+  font-weight: 300;
+}
+
+.reservation {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  gap: 6px;
-  padding: 20px;
-  color: #fff;
-  background-color: #393939;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 268px;
+  background: #f7f7f7;
 }
-.foot a {
+.reservation .res_title {
+  font-size: 1.2rem;
+  margin-top: 40px;
+  font-weight: bold;
+  margin-bottom: -5px;
+  width: 232px;
+}
+.reservation .p_style {
+  color: #585858;
+  font-weight: 300;
+  width: 282px;
+  margin-bottom: 33px;
+}
+
+.restaurant_list {
   display: flex;
-  column-gap: 15px;
+  flex-direction: column;
+  align-items: center;
+  height: 1300px;
+  background-color: rgb(241, 241, 241);
+  gap: 20px;
+}
+.restaurant_list a {
   text-decoration: none;
   color: inherit;
 }
-.foot .handsize {
-  font-size: 11.5px;
+.restaurant_list .restaurant {
+  width: -moz-fit-content;
+  width: fit-content;
+  box-shadow: 1px 0 6px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  background-color: #fff;
 }
-.foot .foot_title {
-  margin-top: -2px;
-  font-family: "Shrikhand";
+.restaurant_list .restaurant .img_resto1 {
+  object-fit: cover;
+  width: 395px;
+  height: 200px;
+  border-radius: 5px;
+}
+.restaurant_list .new {
+  position: absolute;
+  margin-left: 300px;
+  margin-top: 16px;
+  background-color: #99E2D0;
+  border-radius: 3px;
+  padding: 5px 12px;
+  color: #2c9c81;
+  font-weight: 500;
+}
+.restaurant_list .restaurant_text {
+  padding: 5px;
+  font-size: 0.6rem;
+}
+.restaurant_list p {
+  font-size: 0.8rem;
+  margin-top: -15px;
+  font-weight: 300;
+}
+.restaurant_list h2 {
+  display: flex;
+  justify-content: space-between;
+}
+.restaurant_list .heart {
+  font-size: 20px;
+  color: grey;
+}
+.restaurant_list .heart:hover {
+  animation: fill 2s ease-out;
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map */

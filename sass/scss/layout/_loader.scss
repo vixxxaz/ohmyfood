@@ -1,0 +1,7 @@
+.chargement {
+    width: 240px;
+    height: 40px;
+    border-radius: 40px;
+    background: linear-gradient(#9655DC 0 0) left/0% 100% no-repeat #ff79da;
+    animation: charge 4s infinite steps(10);
+}
