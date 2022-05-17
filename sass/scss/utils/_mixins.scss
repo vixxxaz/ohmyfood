@@ -19,3 +19,10 @@
     text-decoration: none;
     color: inherit;
 }
+
+///
+@mixin desktop-only {
+    @media screen and (min-width: map-get($breakpoints, desktop)) {
+        @content;
+    }
+}

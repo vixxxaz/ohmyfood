@@ -3,6 +3,9 @@
         margin-left: 20px;
         font-size: 1.3rem;
         font-weight: bold;
+        @include desktop-only {
+            @include flexbox-center;
+        }
     }
     .list_box {
         display: flex;
@@ -10,6 +13,11 @@
         justify-content: space-around;
         align-items: center;
         height: 240px;
+        @include desktop-only {
+            flex-direction: row;
+            height: 82px;
+        }
+        ;
     }
     .pos {
         position: relative;
@@ -30,7 +38,7 @@
 .localisation {
     display: flex;
     align-items: center;
-    margin-left: 19px;
+    margin-left: 76px;
 }
 
 .ico_loc {
@@ -71,9 +79,8 @@
     height: 1300px;
     background-color: $background-search-color;
     gap: 20px;
-    a {
-        @include link;
-    }
+    @include desktop-only {}
+    ;
     .restaurant {
         width: -moz-fit-content;
         width: fit-content;
@@ -102,7 +109,7 @@
     }
     p {
         font-size: 0.8rem;
-        margin-top: -15px;
+        margin-top: -8px;
         font-weight: 300;
     }
     h2 {
@@ -111,14 +118,5 @@
     }
     .heart {
         font-size: 20px;
-        color: grey;
-    }
-    .heart:hover {
-        animation: fill 2s ease-out;
-        background: linear-gradient(#FF79DA, #9356DC);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        font-weight: bold;
     }
 }
