@@ -17,21 +17,9 @@
             flex-direction: row;
             height: 82px;
         }
-        ;
     }
     .pos {
         position: relative;
-    }
-    .num {
-        height: 30px;
-        width: 30px;
-        position: absolute;
-        margin-left: -29px;
-        margin-top: -16px;
-        &:hover {
-            transform: scale(1.05);
-            animation: rotation 6s infinite linear;
-        }
     }
 }
 

@@ -5,27 +5,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href=".sass\scss\style.css">
+    <link rel="stylesheet" href=".sass/scss/style.css">
+    <script src="https://kit.fontawesome.com/73b021ff64.js" crossorigin="anonymous"></script>
     <title>La palette du goût</title>
 </head>
 
 <body>
-    <div class="head">
-        <header class="header">
+
+    <header class="head">
+        <div class="header">
             <a href="./index.html">
                 <i class="ico_marg fas fa-arrow-left"></i>
             </a>
             <div class="logo_bloc"><img class="logo_size" src="logo/ohmyfood.png" alt="logo" /></div>
-    </div>
-    <div class="img_head">
-        <img src="./restaurants/palette.jpg" class="img_size" alt="à-la-francaise">
-    </div>
+        </div>
+        <div class="img_head">
+            <img src="./restaurants/palette.jpg" class="img_size" alt="palette du goût">
+        </div>
     </header>
 
     <section class="menu">
 
         <div>
-            <h1>La palette du goût
+            <h1 class="resto_titre">La palette du goût
                 <a href="#"><i class="heart far fa-heart" ></i></a>
             </h1>
         </div>
@@ -99,7 +101,7 @@
                 <p>Au piment d'Espelette et à la truffe noire<b>23€</b>
                 </p>
             </div>
-            <span class="btn_command"><a href="#"><button class="btn_explorer " type="button">Commander</button></a></span>
+            <span class="btn_command"><button onclick="window.location.href='#'" class="btn_explorer " type="button">Commander</button></span>
         </div>
 
     </section>

@@ -6,29 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/73b021ff64.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href=".sass\scss\style.css">
+    <link rel="stylesheet" href=".sass/scss/style.css">
     <title>À la française</title>
 </head>
 
 <body>
-    <div class="head">
-        <header class="header">
-            <a href="./index.html">
+    <header class="head">
+        <div class="header">
+            <a href="./index.html" title="retour">
                 <i class="ico_marg fas fa-arrow-left"></i>
             </a>
             <div class="logo_bloc"><img class="logo_size" src="logo/ohmyfood.png" alt="logo" /></div>
-    </div>
-    <div class="img_head">
-        <img src="./restaurants/france.jpg" class="img_size" alt="à-la-francaise">
-    </div>
+        </div>
+        <div>
+            <img src="./restaurants/france.jpg" class="img_size" alt="à-la-francaise">
+        </div>
     </header>
 
     <section class="menu">
 
         <div>
-            <h1>À la française
-                <a href="#"><i class="heart far fa-heart" ></i></a>
-            </h1>
+            <h1 class="resto_titre">À la française<a href="#"><i class="heart far fa-heart" ></i></a></h1>
         </div>
 
         <h3 class="title_entrées">éntrées</h3>
@@ -36,12 +34,20 @@
         <div class="border"></div>
 
         <div class="bloc_entrées">
-            <div class="card_entrées">
-                <h5>Tartare de poulpe acidulé</h5>
-                <p>Aux zestes d'orange <b>25€</b>
-                    <span><i class="fas fa-circle-check"></i></span>
-                </p>
-            </div>
+
+
+            <a href="#">
+                <div class="card_entrées">
+                    <h5>Tartare de poulpe acidulé</h5>
+                    <p>Aux zestes d'orange </p>
+
+                    <div class="box_plat">
+                        <span class="prix_plat"><b>25€</b></span>
+                        <div><i class="fas fa-circle-check couleur "></i></div>
+                    </div>
+
+                </div>
+            </a>
 
             <div class="card_entrées">
                 <h5>Velouté de légumes d'antan</h5>
@@ -101,7 +107,7 @@
                 <p>Revisité<b>22€</b>
                 </p>
             </div>
-            <span class="btn_command"><a href="#"><button class="btn_explorer " type="button">Commander</button></a></span>
+            <span class="btn_command"><button onclick="window.location.href='#'" class="btn_explorer " type="button">Commander</button></span>
         </div>
 
     </section>

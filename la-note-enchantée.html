@@ -6,27 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/73b021ff64.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href=".sass\scss\style.css">
+    <link rel="stylesheet" href=".sass/scss/style.css">
     <title>La note enchantée</title>
 </head>
 
 <body>
-    <div class="head">
-        <header class="header">
+
+    <header class="head">
+        <div class="header">
             <a href="./index.html" title="retour">
                 <i class="ico_marg fas fa-arrow-left"></i>
             </a>
             <div class="logo_bloc"><img class="logo_size" src="logo/ohmyfood.png" alt="logo" /></div>
-    </div>
-    <div class="img_head">
-        <img src="./restaurants/note.jpg" class="img_size" alt="à-la-francaise">
-    </div>
+        </div>
+        <div>
+            <img src="./restaurants/note.jpg" class="img_size" alt="la note enchantée">
+        </div>
     </header>
 
     <section class="menu">
 
         <div>
-            <h1>La note enchantée
+            <h1 class="resto_titre">La note enchantée
                 <a href="#"><i class="heart far fa-heart" ></i></a>
             </h1>
         </div>
@@ -105,15 +106,16 @@
                 <p>Déstructurée<b>23€</b>
                 </p>
             </div>
-            <span class="btn_command"><a href="#"><button class="btn_explorer " type="button">Commander</button></a></span>
+            <span class="btn_command"><button onclick="window.location.href='#'" class="btn_explorer " type="button">Commander</button></span>
         </div>
-        <footer class="foot">
-            <h3 class="foot_title">ohmyfood</h3>
-            <a href="#"><i class="fas fa-utensils"></i>Proposer un restaurant</a>
-            <a href="#"><i class="fas fa-handshake-angle handsize"></i>Devenir partenaire</a>
-            <a href="#">Mentions légales</a>
-            <address> <a href="mailto:toto@ohmyfood.com">Contact</a></address>
-        </footer>
+    </section>
+    <footer class="foot">
+        <h3 class="foot_title">ohmyfood</h3>
+        <a href="#"><i class="fas fa-utensils"></i>Proposer un restaurant</a>
+        <a href="#"><i class="fas fa-handshake-angle handsize"></i>Devenir partenaire</a>
+        <a href="#">Mentions légales</a>
+        <address> <a href="mailto:toto@ohmyfood.com">Contact</a></address>
+    </footer>
 </body>
 
 </html>
