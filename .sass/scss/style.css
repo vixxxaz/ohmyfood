@@ -402,6 +402,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  overflow: hidden;
 }
 .bloc_entrées .box_plat {
   display: flex;
@@ -414,15 +415,19 @@ body {
   height: 84px;
   width: 78px;
   border-radius: 0 15px 15px 0;
-  background-color: #99E2D0;
+  overflow: hidden;
 }
 .bloc_entrées .box_plat:hover {
   animation: slideleft 1s linear;
+  background-color: #99E2D0;
+}
+.bloc_entrées .box_plat:hover .prix_plat {
+  right: 50px;
 }
 
 .prix_plat {
   position: absolute;
-  margin-right: 150px;
+  margin-right: 70px;
   margin-top: 30px;
 }
 
