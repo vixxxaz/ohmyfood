@@ -59,6 +59,26 @@
     transform: translateX(0);
   }
 }
+@keyframes appear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+#delate {
+  animation-delay: 0.3s;
+}
+
+#delate2 {
+  animation-delay: 0.6s;
+}
+
+#delate3 {
+  animation-delay: 0.9s;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -148,6 +168,7 @@ body {
 .foot .foot_title {
   margin-top: -2px;
   font-family: "Shrikhand";
+  font-size: 1.5rem;
 }
 
 .head {
@@ -160,7 +181,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 66px;
+  height: 80px;
 }
 
 .img_size {
@@ -241,54 +262,6 @@ body {
   margin-bottom: 33px;
 }
 
-.restaurant_list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 1300px;
-  background-color: rgb(241, 241, 241);
-  gap: 20px;
-}
-.restaurant_list .restaurant {
-  width: -moz-fit-content;
-  width: fit-content;
-  box-shadow: 1px 0 6px rgba(0, 0, 0, 0.25);
-  border-radius: 15px;
-  background-color: #fff;
-}
-.restaurant_list .restaurant .img_resto1 {
-  object-fit: cover;
-  width: 395px;
-  height: 200px;
-  border-radius: 5px;
-}
-.restaurant_list .new {
-  position: absolute;
-  margin-left: 300px;
-  margin-top: 16px;
-  background-color: #99E2D0;
-  border-radius: 3px;
-  padding: 5px 12px;
-  color: #2c9c81;
-  font-weight: 500;
-}
-.restaurant_list .restaurant_text {
-  padding: 5px;
-  font-size: 0.6rem;
-}
-.restaurant_list p {
-  font-size: 0.8rem;
-  margin-top: -8px;
-  font-weight: 300;
-}
-.restaurant_list h2 {
-  display: flex;
-  justify-content: space-between;
-}
-.restaurant_list .heart {
-  font-size: 20px;
-}
-
 .form {
   display: flex;
   justify-content: center;
@@ -346,6 +319,72 @@ body {
   font-weight: bold;
 }
 
+.restaurant_list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 1300px;
+  background-color: rgb(241, 241, 241);
+  gap: 20px;
+}
+@media screen and (min-width: 768px) {
+  .restaurant_list {
+    display: flex;
+    height: 750px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+.restaurant_list .restaurant {
+  width: -moz-fit-content;
+  width: fit-content;
+  box-shadow: 1px 0 6px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  background-color: #fff;
+}
+.restaurant_list .restaurant .img_resto1 {
+  object-fit: cover;
+  width: 395px;
+  height: 200px;
+  border-radius: 5px;
+}
+@media screen and (min-width: 768px) {
+  .restaurant_list .restaurant .img_resto1 {
+    width: 520px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .restaurant_list .resto_cartefr {
+    margin-top: 89px;
+  }
+}
+.restaurant_list .new {
+  position: absolute;
+  margin-left: 300px;
+  margin-top: 16px;
+  background-color: #99E2D0;
+  border-radius: 3px;
+  padding: 5px 12px;
+  color: #2c9c81;
+  font-weight: 500;
+}
+.restaurant_list .restaurant_text {
+  padding: 5px;
+  font-size: 0.6rem;
+}
+.restaurant_list p {
+  font-size: 0.8rem;
+  margin-top: -8px;
+  font-weight: 300;
+}
+.restaurant_list h2 {
+  display: flex;
+  justify-content: space-between;
+}
+.restaurant_list .heart {
+  font-size: 20px;
+}
+
 .menu {
   position: relative;
   margin-top: -60px;
@@ -391,11 +430,17 @@ body {
   margin-left: 10px;
   margin-top: 5px;
   margin-bottom: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .card_entrées p {
   margin-left: 10px;
   margin-top: 5px;
   margin-bottom: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .bloc_entrées {
@@ -403,6 +448,8 @@ body {
   flex-direction: column;
   gap: 10px;
   overflow: hidden;
+  animation: appear 0.5s;
+  animation-fill-mode: both;
 }
 .bloc_entrées .box_plat {
   display: flex;
@@ -415,7 +462,6 @@ body {
   height: 84px;
   width: 78px;
   border-radius: 0 15px 15px 0;
-  overflow: hidden;
 }
 .bloc_entrées .box_plat:hover {
   animation: slideleft 1s linear;

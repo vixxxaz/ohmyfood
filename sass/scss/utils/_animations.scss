@@ -62,3 +62,24 @@
         transform: translateX(0);
     }
 }
+
+@keyframes appear {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+#delate {
+    animation-delay: 0.3s;
+}
+
+#delate2 {
+    animation-delay: 0.6s;
+}
+
+#delate3 {
+    animation-delay: 0.9s;
+}

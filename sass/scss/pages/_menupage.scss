@@ -42,11 +42,17 @@
         margin-left: 10px;
         margin-top: 5px;
         margin-bottom: 5px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
     p {
         margin-left: 10px;
         margin-top: 5px;
         margin-bottom: 5px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 }
 
@@ -55,6 +61,8 @@
     flex-direction: column;
     gap: 10px;
     overflow: hidden;
+    animation: appear 0.5s;
+    animation-fill-mode: both;
     .box_plat {
         display: flex;
         justify-content: center;
@@ -66,7 +74,6 @@
         height: 84px;
         width: 78px;
         border-radius: 0 15px 15px 0;
-        overflow: hidden;
         &:hover {
             animation: slideleft 1s linear;
             background-color: $color-tertiary;
