@@ -50,17 +50,17 @@
 @keyframes slideleft {
     0% {
         transform: translateX(100%);
-        visibility: visible;
     }
     100% {
         transform: translateX(0);
+        visibility: visible;
     }
     0% {
         transform: translateX(100%);
-        visibility: visible;
     }
     100% {
-        transform: translateX(0);
+        transform: translateX(0%);
+        visibility: visible;
     }
 }
 

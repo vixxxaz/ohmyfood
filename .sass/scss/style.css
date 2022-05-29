@@ -47,17 +47,17 @@
 @keyframes slideleft {
   0% {
     transform: translateX(100%);
-    visibility: visible;
   }
   100% {
     transform: translateX(0);
+    visibility: visible;
   }
   0% {
     transform: translateX(100%);
-    visibility: visible;
   }
   100% {
-    transform: translateX(0);
+    transform: translateX(0%);
+    visibility: visible;
   }
 }
 @keyframes appear {
@@ -395,10 +395,15 @@ h5 {
   position: relative;
   margin-top: -60px;
   width: 100%;
-  height: 700px;
+  height: 1300px;
   background-color: rgb(241, 241, 241);
   border-top-left-radius: 30px 40px;
   border-top-right-radius: 30px 40px;
+}
+@media screen and (min-width: 768px) {
+  .menu {
+    height: 700px;
+  }
 }
 .menu .resto_titre {
   display: flex;
@@ -422,9 +427,11 @@ h5 {
   margin-left: 10px;
 }
 
-.contenaire {
-  display: flex;
-  justify-content: space-around;
+@media screen and (min-width: 768px) {
+  .contenaire {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 .bloc_entrées {
@@ -437,16 +444,20 @@ h5 {
 }
 
 .card_entrées {
-  width: 500px;
+  width: 98%;
   display: flex;
   flex-direction: column;
   border-radius: 15px;
-  /* padding: 10px;*/
   background-color: #fff;
   margin-left: 5px;
   margin-right: 5px;
   box-shadow: 0px 0px 5px 0px rgba(102, 102, 102, 0.25);
   height: 70px;
+}
+@media screen and (min-width: 768px) {
+  .card_entrées {
+    width: 500px;
+  }
 }
 .card_entrées .info {
   width: 80%;
@@ -491,8 +502,9 @@ h5 {
   right: 0;
   height: 70px;
   width: 83px;
-  transform: translateX(85px);
-  transform-origin: right;
+  /*transform: translateX(85px);
+  transform-origin: right;*/
+  opacity: 0;
   background-color: #99E2D0;
   text-align: center;
   line-height: 77px;
@@ -504,12 +516,12 @@ h5 {
   font-size: 1.6rem;
 }
 .card_entrées:hover .check {
-  cursor: pointer;
-  animation: slideleft 1s cubic-bezier(0.77, 0, 0.18, 1);
+  opacity: 1;
+  animation: slideleft 0.5s cubic-bezier(0.39, 0.57, 0.56, 1);
   background-color: #99E2D0;
 }
 .card_entrées:hover .check .fas {
-  animation: rotation 1s cubic-bezier(0.77, 0, 0.18, 1);
+  animation: rotation 1s cubic-bezier(0.39, 0.57, 0.56, 1);
 }
 .card_entrées:hover .info {
   width: 75%;
