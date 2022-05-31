@@ -1,8 +1,9 @@
 .navigation {
     .nav_title {
-        margin-left: 20px;
+        margin-left: 13px;
+        margin-top: 45px;
         font-size: 1.3rem;
-        font-weight: bold;
+        font-weight: 600;
         @include desktop-only {
             @include flexbox-center;
         }
@@ -12,7 +13,8 @@
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        height: 240px;
+        height: 275px;
+        width: auto;
         @include desktop-only {
             flex-direction: row;
             height: 82px;
@@ -36,7 +38,7 @@
 .input {
     border: none;
     background-color: $background-search-color;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .reservation {
@@ -48,11 +50,11 @@
     height: 268px;
     background: (lighten($background-search-color, 2.5%));
     .res_title {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         margin-top: 40px;
-        font-weight: bold;
+        font-weight: 600;
         margin-bottom: -5px;
-        width: 232px;
+        width: 245px;
     }
     .p_style {
         color: (darken($background-search-color, 60%));

@@ -3,6 +3,9 @@ body {
     font-family: 'Roboto', 'sans-serif';
     margin: 0px 0px;
     max-width: 100%;
+    @include desktop-only {
+        width: 100%;
+    }
 }
 
 h5 {

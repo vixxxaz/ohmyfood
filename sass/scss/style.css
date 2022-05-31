@@ -91,7 +91,7 @@ body {
   margin: 0px 0px;
   max-width: 100%;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   body {
     width: 100%;
   }
@@ -211,7 +211,7 @@ h5 {
   font-size: 1.3rem;
   font-weight: 600;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .navigation .nav_title {
     display: flex;
     justify-content: center;
@@ -226,7 +226,7 @@ h5 {
   height: 275px;
   width: auto;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .navigation .list_box {
     flex-direction: row;
     height: 82px;
@@ -306,6 +306,11 @@ h5 {
 .main {
   animation: page_load 3s ease-in-out 1s backwards;
 }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .main {
+    width: 997px;
+  }
+}
 
 .logo_bloc {
   display: flex;
@@ -322,9 +327,14 @@ h5 {
 .restaurant_title {
   font-size: 0.9rem;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .restaurant_title {
     margin-right: 395px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .restaurant_title {
+    margin-right: 326px;
   }
 }
 @media screen and (max-width: 425px) {
@@ -352,12 +362,17 @@ h5 {
   background-color: rgb(241, 241, 241);
   gap: 20px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .restaurant_list {
     display: flex;
     height: 750px;
     flex-wrap: wrap;
     justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .restaurant_list {
+    width: 998px;
   }
 }
 @media screen and (max-width: 425px) {
@@ -378,7 +393,7 @@ h5 {
   height: 200px;
   border-radius: 5px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .restaurant_list .restaurant .img_resto1 {
     width: 472px;
   }
@@ -389,7 +404,7 @@ h5 {
     height: 135px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .restaurant_list .resto_cartefr {
     margin-top: 82px;
   }
@@ -404,7 +419,7 @@ h5 {
   color: #2c9c81;
   font-weight: 500;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .restaurant_list .new {
     margin-left: 384px;
   }
@@ -440,7 +455,7 @@ h5 {
   border-top-left-radius: 30px 40px;
   border-top-right-radius: 30px 40px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .menu {
     height: 700px;
   }
@@ -467,7 +482,7 @@ h5 {
   margin-left: 10px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .contenaire {
     display: flex;
     justify-content: space-around;
@@ -494,7 +509,7 @@ h5 {
   box-shadow: 0px 0px 5px 0px rgba(102, 102, 102, 0.25);
   height: 70px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .card_entrées {
     width: 350px;
   }
@@ -514,7 +529,7 @@ h5 {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .card_entrées .info h5 {
     font-size: 1.1rem;
   }
@@ -532,7 +547,7 @@ h5 {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .card_entrées .info .para_prix p {
     font-size: 0.8rem;
   }

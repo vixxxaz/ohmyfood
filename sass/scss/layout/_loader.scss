@@ -18,5 +18,8 @@
 }
 
 .main {
+    @include tablet-only {
+        width: 997px;
+    }
     animation: page_load 3s ease-in-out 1s backwards;
 }

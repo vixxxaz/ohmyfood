@@ -27,8 +27,14 @@
     }
 }
 
+@mixin tablet-only {
+    @media screen and (min-width: map-get($breakpoints3, tablet)) and (max-width: map-get($breakpoints4, tablet1)) {
+        @content;
+    }
+}
+
 @mixin mobile-only {
-    @media screen and (max-width: map-get($breakpoints, mobile)) {
+    @media screen and (max-width: map-get($breakpoints2, mobile)) {
         @content;
     }
 }

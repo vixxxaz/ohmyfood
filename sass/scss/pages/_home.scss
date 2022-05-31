@@ -9,7 +9,18 @@
 }
 
 .restaurant_title {
-    margin-right: 268px;
+    font-size: 0.9rem;
+    @include desktop-only {
+        margin-right: 395px;
+    }
+    @include tablet-only {
+        margin-right: 326px;
+    }
+    @include mobile-only {
+        margin-right: 154px;
+        margin-top: 20px;
+        margin-bottom: -17px;
+    }
 }
 
 .heart:hover {
@@ -32,6 +43,12 @@
         flex-wrap: wrap;
         justify-content: center;
     }
+    @include tablet-only {
+        width: 998px;
+    }
+    @include mobile-only {
+        height: 1050px;
+    }
     .restaurant {
         width: -moz-fit-content;
         width: fit-content;
@@ -43,24 +60,34 @@
             height: 200px;
             border-radius: 5px;
             @include desktop-only {
-                width: 520px;
+                width: 472px;
+            }
+            @include mobile-only {
+                width: 280px;
+                height: 135px;
             }
         }
     }
     .resto_cartefr {
         @include desktop-only {
-            margin-top: 89px;
+            margin-top: 82px;
         }
     }
     .new {
         position: absolute;
-        margin-left: 426px;
+        margin-left: 300px;
         margin-top: 16px;
         background-color: $color-tertiary;
         border-radius: 3px;
         padding: 5px 12px;
         color: (darken($color-tertiary, 35%));
         font-weight: 500;
+        @include desktop-only {
+            margin-left: 384px;
+        }
+        @include mobile-only {
+            margin-left: 195px;
+        }
     }
     .restaurant_text {
         padding: 5px;
