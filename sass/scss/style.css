@@ -161,7 +161,7 @@ h5 {
 .foot {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
   gap: 6px;
   padding: 20px;
   color: #fff;
@@ -387,19 +387,19 @@ h5 {
   border-radius: 15px;
   background-color: #fff;
 }
-.restaurant_list .restaurant .img_resto1 {
+.restaurant_list .restaurant .img_resto {
   object-fit: cover;
   width: 395px;
   height: 200px;
   border-radius: 5px;
 }
 @media screen and (min-width: 769px) {
-  .restaurant_list .restaurant .img_resto1 {
+  .restaurant_list .restaurant .img_resto {
     width: 472px;
   }
 }
 @media screen and (max-width: 425px) {
-  .restaurant_list .restaurant .img_resto1 {
+  .restaurant_list .restaurant .img_resto {
     width: 280px;
     height: 135px;
   }
@@ -437,6 +437,7 @@ h5 {
   font-size: 0.8rem;
   margin-top: -8px;
   font-weight: 300;
+  color: #4b4b4b;
 }
 .restaurant_list h2 {
   display: flex;
@@ -504,8 +505,7 @@ h5 {
   flex-direction: column;
   border-radius: 15px;
   background-color: #fff;
-  margin-left: 5px;
-  margin-right: 5px;
+  margin: auto;
   box-shadow: 0px 0px 5px 0px rgba(102, 102, 102, 0.25);
   height: 70px;
 }
@@ -525,13 +525,14 @@ h5 {
   margin-left: 11px;
   margin-top: 10px;
   margin-bottom: 5px;
+  font-size: 0.9rem;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 @media screen and (min-width: 769px) {
   .card_entrées .info h5 {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 }
 .card_entrées .info .para_prix {
@@ -546,6 +547,7 @@ h5 {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  color: #4b4b4b;
 }
 @media screen and (min-width: 769px) {
   .card_entrées .info .para_prix p {
@@ -562,14 +564,12 @@ h5 {
   right: 0;
   height: 70px;
   width: 83px;
-  /*transform: translateX(85px);
-  transform-origin: right;*/
   opacity: 0;
   background-color: #99E2D0;
   text-align: center;
   line-height: 77px;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 .card_entrées .check .fas {
   color: #fff;

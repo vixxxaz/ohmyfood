@@ -54,7 +54,7 @@
         width: fit-content;
         @include shadow-card;
         background-color: #fff;
-        .img_resto1 {
+        .img_resto {
             object-fit: cover;
             width: 395px;
             height: 200px;
@@ -97,6 +97,7 @@
         font-size: 0.8rem;
         margin-top: -8px;
         font-weight: 300;
+        color: (darken($background-search-color, 65%));
     }
     h2 {
         display: flex;

@@ -1,7 +1,5 @@
 .foot {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @include flex-column;
     gap: 6px;
     padding: 20px;
     color: #fff;
