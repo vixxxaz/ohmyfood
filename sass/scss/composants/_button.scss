@@ -36,7 +36,7 @@
             color: $color-primary;
         }
         .num {
-            animation: rotation 3s infinite linear;
+            animation: rotation 0.5s cubic-bezier(.79, .65, .33, 1.04);
         }
     }
 }
