@@ -61,10 +61,7 @@
     box-shadow: 0px 0px 10px 0px lighten($shadow-color, 40%);
     height: 70px;
     @include desktop-only {
-        width: 350px;
-    }
-    @include tablet-only {
-        width: 269px;
+        width: 312px;
     }
     .info {
         width: 95%;
@@ -102,6 +99,12 @@
             }
         }
         .prix_plat {
+            @include desktop-only {
+                margin-right: 9px;
+            }
+            @include tablet-only {
+                margin-right: 19px;
+            }
             @include mobile-only {
                 margin-right: 16px;
             }
@@ -132,6 +135,6 @@
         }
     }
     &:hover .info {
-        width: 75%;
+        width: 70%;
     }
 }
