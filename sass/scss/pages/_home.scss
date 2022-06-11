@@ -10,12 +10,7 @@
 
 .restaurant_title {
     font-size: 0.9rem;
-    @include desktop-only {
-        margin-right: 395px;
-    }
-    @include tablet-only {
-        margin-right: 326px;
-    }
+    margin-right: 274px;
     @include mobile-only {
         margin-right: 154px;
         margin-top: 20px;

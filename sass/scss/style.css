@@ -52,6 +52,13 @@
     transform: translateX(100%);
   }
   100% {
+    transform: translateX(0);
+    visibility: visible;
+  }
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
     transform: translateX(0%);
     visibility: visible;
   }
@@ -155,6 +162,8 @@ h5 {
 }
 
 .foot {
+  display: flex;
+  flex-direction: column;
   gap: 6px;
   padding: 20px;
   color: #fff;
@@ -279,11 +288,21 @@ h5 {
 
 .bloc_charge {
   position: fixed;
-  left: 50%;
+  left: 48%;
   top: 50%;
   animation: loader 3s ease-in-out 1s forwards;
   width: 100%;
   height: 100%;
+}
+@media screen and (max-width: 425px) {
+  .bloc_charge {
+    left: 40%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .bloc_charge {
+    left: 46%;
+  }
 }
 
 .chargement {
@@ -319,16 +338,7 @@ h5 {
 
 .restaurant_title {
   font-size: 0.9rem;
-}
-@media screen and (min-width: 769px) {
-  .restaurant_title {
-    margin-right: 395px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  .restaurant_title {
-    margin-right: 326px;
-  }
+  margin-right: 274px;
 }
 @media screen and (max-width: 425px) {
   .restaurant_title {
@@ -460,7 +470,8 @@ h5 {
   align-items: center;
   font-size: 1.5rem;
   font-family: "shrikhand";
-  padding: 30px;
+  padding: 25px;
+  margin-bottom: 0px;
 }
 .menu .title_entrées {
   font-weight: 300;
@@ -476,6 +487,10 @@ h5 {
   margin-left: 10px;
 }
 
+.contenaire {
+  margin-left: 15px;
+  margin-right: 15px;
+}
 @media screen and (min-width: 769px) {
   .contenaire {
     display: flex;
@@ -507,8 +522,13 @@ h5 {
     width: 350px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .card_entrées {
+    width: 269px;
+  }
+}
 .card_entrées .info {
-  width: 80%;
+  width: 95%;
   white-space: nowrap;
   overflow: hidden;
 }
