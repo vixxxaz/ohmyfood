@@ -19,6 +19,14 @@
             flex-direction: row;
             height: 82px;
         }
+        @include tablet-only {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            height: 275px;
+            width: auto;
+        }
     }
     .pos {
         position: relative;

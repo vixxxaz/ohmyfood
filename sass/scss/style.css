@@ -234,6 +234,16 @@ h5 {
     height: 82px;
   }
 }
+@media screen and (min-width: 769px) and (max-width: 991px) {
+  .navigation .list_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 275px;
+    width: auto;
+  }
+}
 .navigation .pos {
   position: relative;
 }
@@ -299,7 +309,7 @@ h5 {
     left: 40%;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (min-width: 769px) and (max-width: 991px) {
   .bloc_charge {
     left: 46%;
   }
@@ -318,7 +328,7 @@ h5 {
 .main {
   animation: page_load 3s ease-in-out 1s backwards;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (min-width: 769px) and (max-width: 991px) {
   .main {
     width: 997px;
   }
@@ -373,7 +383,7 @@ h5 {
     justify-content: center;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (min-width: 769px) and (max-width: 991px) {
   .restaurant_list {
     width: 998px;
   }
@@ -522,6 +532,11 @@ h5 {
     width: 312px;
   }
 }
+@media screen and (min-width: 769px) and (max-width: 991px) {
+  .card_entrées {
+    width: 269px;
+  }
+}
 .card_entrées .info {
   width: 95%;
   white-space: nowrap;
@@ -567,7 +582,7 @@ h5 {
     margin-right: 9px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (min-width: 769px) and (max-width: 991px) {
   .card_entrées .info .prix_plat {
     margin-right: 19px;
   }

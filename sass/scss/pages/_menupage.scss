@@ -63,6 +63,9 @@
     @include desktop-only {
         width: 312px;
     }
+    @include tablet-only {
+        width: 269px;
+    }
     .info {
         width: 95%;
         white-space: nowrap;
