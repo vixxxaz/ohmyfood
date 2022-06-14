@@ -16,14 +16,6 @@
     transform: rotate(359deg);
   }
 }
-@keyframes charge {
-  from {
-    transform: rotate(0);
-  }
-  to {
-    transform: rotate(1turn);
-  }
-}
 @keyframes loader {
   0% {
     opacity: 1;
@@ -161,7 +153,7 @@ h5 {
   margin-top: 50px;
 }
 
-.foot {
+.bloc_foot {
   display: flex;
   flex-direction: column;
   gap: 6px;
@@ -169,16 +161,16 @@ h5 {
   color: #fff;
   background-color: #393939;
 }
-.foot a {
+.bloc_foot a {
   display: flex;
   column-gap: 15px;
   text-decoration: none;
   color: inherit;
 }
-.foot .handsize {
+.bloc_foot .handsize {
   font-size: 11.5px;
 }
-.foot .foot_title {
+.bloc_foot .foot_title {
   margin-top: -2px;
   font-family: "Shrikhand";
   font-size: 1.5rem;
@@ -322,14 +314,14 @@ h5 {
   border: 8px solid;
   border-color: #9356DC;
   border-right-color: #FF79DA;
-  animation: charge 1s infinite linear;
+  animation: rotation 1s infinite linear;
 }
 
-.main {
+.bloc_principale {
   animation: page_load 3s ease-in-out 1s backwards;
 }
 @media screen and (min-width: 769px) and (max-width: 991px) {
-  .main {
+  .bloc_principale {
     width: 997px;
   }
 }
@@ -385,6 +377,8 @@ h5 {
 }
 @media screen and (min-width: 769px) and (max-width: 991px) {
   .restaurant_list {
+    display: grid;
+    height: auto;
     width: 998px;
   }
 }
@@ -399,6 +393,11 @@ h5 {
   box-shadow: 1px 0 6px rgba(0, 0, 0, 0.25);
   border-radius: 15px;
   background-color: #fff;
+}
+@media screen and (min-width: 769px) and (max-width: 991px) {
+  .restaurant_list .restaurant {
+    margin-bottom: 20px;
+  }
 }
 .restaurant_list .restaurant .img_resto {
   object-fit: cover;
@@ -420,6 +419,11 @@ h5 {
 @media screen and (min-width: 769px) {
   .restaurant_list .resto_cartefr {
     margin-top: 82px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 991px) {
+  .restaurant_list .resto_cartefr {
+    margin-top: 0;
   }
 }
 .restaurant_list .new {
@@ -452,7 +456,7 @@ h5 {
   font-weight: 300;
   color: #4b4b4b;
 }
-.restaurant_list h2 {
+.restaurant_list h3 {
   display: flex;
   justify-content: space-between;
 }

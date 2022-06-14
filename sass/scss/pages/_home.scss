@@ -39,6 +39,8 @@
         justify-content: center;
     }
     @include tablet-only {
+        display: grid;
+        height: auto;
         width: 998px;
     }
     @include mobile-only {
@@ -49,6 +51,9 @@
         width: fit-content;
         @include shadow-card;
         background-color: #fff;
+        @include tablet-only {
+            margin-bottom: 20px;
+        }
         .img_resto {
             object-fit: cover;
             width: 395px;
@@ -66,6 +71,9 @@
     .resto_cartefr {
         @include desktop-only {
             margin-top: 82px;
+        }
+        @include tablet-only {
+            margin-top: 0;
         }
     }
     .new {
@@ -94,7 +102,7 @@
         font-weight: 300;
         color: (darken($background-search-color, 65%));
     }
-    h2 {
+    h3 {
         display: flex;
         justify-content: space-between;
     }
